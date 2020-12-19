@@ -8,7 +8,15 @@
  */
 
 // Apply the java plugin to add support for Java
-apply plugin: 'java'
+plugins 
+{
+id 'java'
+id 'edu.sc.seis.launch4j' version '2.4.9'
+}
+
+launch4j {
+  mainClassName = '/src/main/java/SwingDemo.java'
+}
 
 // In this section you declare where to find the dependencies of your project
 repositories {
